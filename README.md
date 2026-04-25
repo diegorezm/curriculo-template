@@ -1,5 +1,7 @@
 # Gerador de Currículo em PDF
 
+![Exemplo de currículo gerado](example.png)
+
 Sistema para gerar currículos em PDF a partir de Markdown com configuração personalizável.
 
 ## Como Usar
