@@ -1,0 +1,29 @@
+{
+  "name": "[Seu Nome Completo]",
+  "contacts": [
+    {
+      "type": "website",
+      "icon": "icons/web.svg",
+      "url": "https://[seusite.com]",
+      "display": "[seusite.com]"
+    },
+    {
+      "type": "email",
+      "icon": "icons/gmail.svg",
+      "url": "mailto:[seu@email.com]",
+      "display": "[seu@email.com]"
+    },
+    {
+      "type": "github",
+      "icon": "icons/github.svg",
+      "url": "https://github.com/[seuusuario]",
+      "display": "[seuusuario]"
+    },
+    {
+      "type": "linkedin",
+      "icon": "icons/linkedin.webp",
+      "url": "https://linkedin.com/in/[seuusuario]",
+      "display": "[seuusuario]"
+    }
+  ]
+}

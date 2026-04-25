@@ -1,0 +1,62 @@
+@page {
+    margin: 0.5in;  
+    size: A4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Arial", serif;
+    font-size: 10pt;
+    line-height: 1.5;
+    color: #222;
+}
+
+h1 { font-size: 22pt; margin-bottom: 2px;  font-weight: bold; }
+h2 { font-size: 13pt; border-bottom: 1px solid #ccc; margin-top: 10px; margin-bottom: 2px; }
+h3 { font-size: 11pt; margin-bottom: 2px; }
+
+ul { margin: 4px 0; padding-left: 18px; }
+
+img.icon {
+    width: 14px;
+    height: 14px;
+    vertical-align: -2px;
+    margin-right: 4px;
+}
+
+a {
+    color: darkblue;
+    text-decoration: none;
+}
+
+a:hover {
+	color: aqua
+    text-decoration: underline;
+}
+
+.text-center {
+	text-align: center;
+}
+
+/* keeps sections from breaking across pages */
+h2, h3 { page-break-after: avoid; }
+
+.contact {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+   margin-bottom: 4px;
+}
+
+.separator {
+    color: #aaa;
+}
+
+h2:first-of-type {
+    margin-top: 6px; /* tighten the gap before the first section */
+}
