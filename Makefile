@@ -1,5 +1,5 @@
 OUTPUT_DIR := output
-SOURCES    := $(wildcard *.md)
+SOURCES    := $(filter-out README.md, $(wildcard *.md))
 GDRIVE_DIRECTORY := curriculos/
 PDFS       := $(SOURCES:%.md=$(OUTPUT_DIR)/%.pdf)
 
@@ -10,7 +10,7 @@ all: $(OUTPUT_DIR) $(PDFS)
 $(OUTPUT_DIR):
 	mkdir -p $(OUTPUT_DIR)
 
-$(OUTPUT_DIR)/%.pdf: %.md style.css
+$(OUTPUT_DIR)/%.pdf: %.md style.css config.json
 	python build.py $< $@
 
 clean:
